@@ -2,6 +2,8 @@
 import sys
 
 #/home/pvf/liumeiyi/BERT/bert/embedding_graph.txt
+#cat /home/pvf/liumeiyi/BERT/bert/embedding_graph | python change_embedding.py > relation2vec.adjust_done
+#执行过属于NER的打印下一行会有空行，awk NF file > file.debug，去掉
 relation_id = open('relation2id.txt', 'r')
 relation_embedding = open('relation2vec.bern.ori', 'r')
 relation_list = []
